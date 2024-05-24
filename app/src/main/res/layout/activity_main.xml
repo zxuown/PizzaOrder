@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Menu:"
+       android:textColor="#FFFFFF"
+       android:textSize="52sp"
+       android:gravity="center">
+   </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <Button
+            android:id="@+id/btnCheesePizza"
+            android:layout_width="260dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#212128"
+            android:text="4 cheese | 15$"
+            android:gravity="left|center"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+        </Button>
+        <ImageView
+            android:layout_width="113dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/fourcheese" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <Button
+            android:id="@+id/btnMargaritaPizza"
+            android:layout_width="260dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#212128"
+            android:text="Margarita | 13$"
+            android:gravity="left|center"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+        </Button>
+
+        <ImageView
+            android:layout_width="113dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/margarita"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <Button
+            android:id="@+id/btnHawaiianPizza"
+            android:layout_width="260dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#212128"
+            android:text="Hawaiian | 16$"
+            android:gravity="left|center"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+        </Button>
+
+        <ImageView
+            android:layout_width="113dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/hawaiian" />
+
+    </LinearLayout>
+
+</LinearLayout>
