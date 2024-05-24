@@ -10,6 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.List;
+
 public class OrderActivity extends AppCompatActivity {
 
     private TextView tvResult;
@@ -24,8 +26,10 @@ public class OrderActivity extends AppCompatActivity {
 
         tvResult = findViewById(R.id.tvRes);
         if (pizza != null) {
+            List<String> toppings = pizza.getToppings();
+            String toppingsText = toppings != null ? String.join(", ", toppings) : "None";
             tvResult.setText("Pizza: " + pizza.getName() + "\nSize: " + pizza.getSize()
-                    + "\nToppings: " + String.join(", ", pizza.getToppings())
+                    + "\nToppings: " + toppingsText
                     +"\nPrice: " + pizza.getPrice() + "$");
         }
 
